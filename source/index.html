@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--css styles starts-->
+    
+    <!--common jquery end-->
+</head>
+  <body>
+    <div id="root" className="wrapper"></div>
+    <script type="text/javascript">
+	    // all content including images has been loaded
+	    window.onload = function() {
+		setTimeout(function(){
+		  var myParam = location.search.split('selectedComponet=')[1]
+		  // post our message to the parent
+	  	window.parent.postMessage(
+		    // get height of the content
+		    {
+			"height":document.body.scrollHeight,
+			"selected_id":myParam
+		    }
+		    //    document.body.scrollHeight
+		    // set target domain
+		    ,"*"
+		  )
+		}, 10000);
+	    };
+      </script>
+  </body>
+</html>
