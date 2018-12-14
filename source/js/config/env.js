@@ -1,4 +1,4 @@
 const env = {
-  PORT: 'http://foodordering-platform.sharematter.com',
+  PORT: 'http://localhost:3000/v1',
 };
 export default env;

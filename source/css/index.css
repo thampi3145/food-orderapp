@@ -1,8 +1,6 @@
-@import "base/app.css";
-@import "animate.css";
-@import "bootstrap.css";
 @import "bootstrap.min.css";
-@import "menu.css";
-@import "responsive.css";
-@import "style.css";
+@import "custom.css";
+@import "react-custom.css";
+
+
 

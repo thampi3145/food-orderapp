@@ -6,6 +6,7 @@ import appSagas from 'sagas/app';
 import sliderSagas from 'sagas/slider';
 import footerSagas from 'sagas/footer';
 import htmlrender from 'sagas/htmlrender';
+import girabuy from 'sagas/girabuy';
 
 export default function* rootSaga() {
   yield all([
@@ -13,7 +14,8 @@ export default function* rootSaga() {
     ...headerSagas,
     ...sliderSagas,
     ...footerSagas,
-    ...htmlrender
+    ...htmlrender,
+    ...girabuy
    
   ]);
 }

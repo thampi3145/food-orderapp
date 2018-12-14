@@ -1,0 +1,46 @@
+button:focus {
+  outline: none;
+}
+.slick-arrow {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  height: 90px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  -webkit-transition: all 0.3s ease 0s;
+  width: 54px;
+  border: 1px solid #ddd;
+  background: #fff !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+  z-index: 1;
+}
+.slick-arrow.slick-next {
+  right: -50px;
+}
+.slick-arrow.slick-prev {
+  left: -30px;
+}
+.slick-arrow.slick-next:before, 
+.slick-arrow.slick-prev:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #000;
+  font-size: 30px;
+  line-height: 80px;
+  content: '\f104';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
